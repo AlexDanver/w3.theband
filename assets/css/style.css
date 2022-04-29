@@ -19,6 +19,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -99,12 +100,79 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
-    min-height: 300px;
-    background-color: #ccc;
+    padding-top: 50%; 
+    /* 50% chiều ngang của chính nó */
+    background: url('/assets/Slider/chicago.jpg') top center / cover no-repeat;
+    /* URL bg image + position + / size + bg repeat */
+
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translate(-50%); */
+    
+    text-align: center;
+    width: 100%;
+
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 64px 0 0;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+    text-align: center;
+    
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list {
+    margin-top: 47px;
+}
+
+#content .member-item {
+    float: left;
 
 }
 
